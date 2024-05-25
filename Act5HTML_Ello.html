@@ -1,111 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Act5_Ello</title>
-	<link rel="stylesheet" href="Act5CSS_Ello.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Act5CS_Ello.css">
 </head>
-
 <body>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-	<div class="header">
-		<ul class="topnav responsive" id="myTopnav">
-			<label class="logo"> Job Application </label>
-			<a href="#about">About</a>
-			<a href="#education">Education</a>
-			<a href="#skills">Skills</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#contact">Contact</a>
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to my portfolio</h2>
+            <p> <span id="type"></span></p>
+        </div>
+    </section>
 
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars">
-				</i>
-			</a>
-		</ul>
-	</div>
-	<center>
-		<br></br>
-		<br></br>
-		<div class="page-content">
-				<h1> <br> <img src="pic.jpg" width="400" height="400"> </br> </h1>
-				<h2>Jhusthine Ello</h2>
-				<h3>BS in Information Technology</h3>
-			</div>
-			<div class="card" id="about">
-				<p class="card-header">About</p>
-				<p class="card-body">
-				<p>Annyeong! Hi everyone, My name is Jhusthine Ello.
-					I'm currently running my boutique shop that a small shop that sells fashionable clothes, shoes, jewelry, etc.</p>
-				</p>
-				<br />
-				<br />
-			</div>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p> Annyeonghaseyo. Mi Jhuthine Ello. Currently studying at University of Science and Technology of Southern Philippines, taking up a Bachelor of Scince in Information Technology.
+                Not taken but also not available just happy living with my current life as a single lady whose more addicted to books and kdramas than to boys who just give you problems.  </p>
+        </div>
+    </section>
 
-			<div class="card" id="education">
-				<p class="card-header">Education</p>
-				<p class="card-body">
-					<br /> Currently a second-year student at the University of Science and Technology of the Southern
-					Philippines,
-					pursuing Bachelor of Science in Information Technology.
-				</p>
-				<br />
-				<br />
-				<br />
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <h3>Photoshop</h3>
+                <div class="skill-bar">
+                    <div class="skill" style="width: 80%;"></div>
+                </div>
+                <h3>Canvas</h3>
+                <div class="skill-bar">
+                    <div class="skill" style="width: 90%;"></div>
+                </div>
+                <h3>Excel</h3>
+                <div class="skill-bar">
+                    <div class="skill" style="width: 40%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			</div>
+    <section id="contact">
+        <div class="container">
+            <h2>send me a message</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-			<div class="card" id="skills">
-				<p class="card-header">Skills</p>
-				<p class="card-body">
-					<li>Computer proficiency in Photoshop, Microsoft Word,
-						Excel, PowerPoint, and Outlook </li>
-					<li>Communication</li>
-					<li>Planning</li>
-					<li> Detail oriented & reliable </li>
-					<br />
-					<br />
-			</div>
+    <footer>
+        <div class="container">
+            <p> The past is the reflection of our present, but the present is the reflection our future.</p>
+        </div>
+    </footer>
 
-			<div class="card" id="portfolio">
-				<p class="card-header">Portfolio</p>
-				<p class="card-body">
-				<p>Name : Jhusthine Ello</p>
-				<p>Birthdate : June 2, 2001</p>
-				<p>Birthplace : Cagayan de Oro City, Misamis Oriental</p>
-				<p>Age : 22 years old</p>
-				<br />
-			</div>
-
-			<div class="card" id="contact">
-				<p class="card-header">Contact</p>
-				<p class="card-body">
-				<p>Phone Number : 09532662523</p>
-				<p>Email : jhusthine.ello@gmail.com</p>
-				<p>Facebook Account: Jhusthine Ello</p>
-				<p>Facebook Account Link : https://web.facebook.com/angel.malongo/    </p>
-				<br />
-			</div>
-		</div>
-		<script>
-
-			function myFunction() {
-				var x = document.getElementById("myTopnav");
-				if (x.className == "topnav") {
-					x.className += " responsive";
-				} else {
-					x.className = "topnav";
-				}
-			}
-		</script>
+    <script src="script.js"></script>
 </body>
-<footer>
-	<br>
-	<p> The past is the reflection of our present, but the present is the reflection our future.   </p> </br>
-</footer>
-</center>
-<html>
+</html>
+ 
